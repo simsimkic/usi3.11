@@ -1,0 +1,33 @@
+﻿<Window x:Class="ZdravoCorp.View.MakeAppointmentView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MakeAppointment" Height="450" Width="800">
+    <Grid>
+        <ComboBox SelectedIndex="1" SelectedItem="{Binding DoctorName, UpdateSourceTrigger=PropertyChanged}"
+                  ItemsSource="{Binding AllDoctors}" HorizontalAlignment="Left" Margin="155,129,0,0"
+                  VerticalAlignment="Top" Width="337" Height="40" />
+        <Label x:Name="_" Content="Create Appointment" HorizontalAlignment="Left" Margin="51,29,0,0"
+               VerticalAlignment="Top" FontSize="48" />
+        <Label Content="Doctor : " HorizontalAlignment="Left" Margin="27,129,0,0" VerticalAlignment="Top" FontSize="22" />
+        <DatePicker SelectedDate="{Binding Date, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left"
+                    Margin="155,217,0,0" VerticalAlignment="Top" Height="114" Width="134" />
+        <Label Content="Datum : " HorizontalAlignment="Left" Margin="27,217,0,0" VerticalAlignment="Top" FontSize="24" />
+        <Label Content="Tacno vreme : " HorizontalAlignment="Left" Margin="352,217,0,0" VerticalAlignment="Top"
+               FontSize="24" />
+        <Label Content=":" HorizontalAlignment="Left" Margin="557,220,0,0" VerticalAlignment="Top" FontSize="20" />
+        <Button Command="{Binding CreateAppointmentCommand}" Content="Create" HorizontalAlignment="Left"
+                Margin="222,355,0,0" VerticalAlignment="Top" Height="48" Width="129" FontSize="16" />
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="418,355,0,0" VerticalAlignment="Top" FontSize="20"
+                Height="48" Width="116" Click="Button_Click" />
+        <ComboBox SelectedIndex="1" SelectedItem="{Binding Hours, UpdateSourceTrigger=PropertyChanged}"
+                  ItemsSource="{Binding PossibleHours}" HorizontalAlignment="Left" Margin="508,224,0,0"
+                  VerticalAlignment="Top" Width="49" Height="30" />
+        <ComboBox SelectedIndex="1" SelectedItem="{Binding Minutes, UpdateSourceTrigger=PropertyChanged}"
+                  ItemsSource="{Binding PossibleMinutes}" HorizontalAlignment="Left" Margin="571,224,0,0"
+                  VerticalAlignment="Top" Width="49" Height="30" />
+        <!--<TextBox Text="{Binding Hours, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="32" Margin="618,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.476,0.568" TextChanged="TextBox_TextChanged" FontSize="18"/>-->
+    </Grid>
+</Window>

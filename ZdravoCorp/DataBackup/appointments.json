@@ -1,0 +1,60 @@
+[
+  {
+    "IsCanceled": false,
+    "Id": 696,
+    "Time": {
+      "start": "2023-10-10T09:00:00",
+      "end": "2023-10-10T09:15:00"
+    },
+    "Doctor": {
+      "Email": "savo.oroz@gmail.com",
+      "FirstName": "Savo",
+      "LastName": "Oroz",
+      "Specialization": 1
+    },
+    "PatientEmail": "sreten.pejovic@gmail.com",
+    "Anamnesis": {
+      "Symptoms": [
+        "fever",
+        "cough"
+      ],
+      "Opinion": "Hospital treatment required",
+      "KeyWord": "Now",
+      "Allergens": [
+        "urticaria",
+        "on food"
+      ]
+    },
+    "Room": null,
+    "Status": false
+  },
+  {
+    "IsCanceled": false,
+    "Id": 966,
+    "Time": {
+      "start": "2023-11-10T09:00:00",
+      "end": "2023-11-10T09:15:00"
+    },
+    "Doctor": {
+      "Email": "savo.oroz@gmail.com",
+      "FirstName": "Savo",
+      "LastName": "Oroz",
+      "Specialization": 1
+    },
+    "PatientEmail": "sreten.pejovic@gmail.com",
+    "Anamnesis": {
+      "Symptoms": [
+        "fever",
+        "cough"
+      ],
+      "Opinion": "Hospital treatment required",
+      "KeyWord": "Now",
+      "Allergens": [
+        "urticaria",
+        "on food"
+      ]
+    },
+    "Room": null,
+    "Status": false
+  }
+]  

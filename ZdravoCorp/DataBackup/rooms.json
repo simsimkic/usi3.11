@@ -1,0 +1,50 @@
+[
+  {
+    "Id": 101,
+    "Type": "OperationRoom"
+  },
+  {
+    "Id": 102,
+    "Type": "OperationRoom"
+  },
+  {
+    "Id": 111,
+    "Type": "ExaminationRoom"
+  },
+  {
+    "Id": 112,
+    "Type": "ExaminationRoom"
+  },
+  {
+    "Id": 113,
+    "Type": "ExaminationRoom"
+  },
+  {
+    "Id": 114,
+    "Type": "ExaminationRoom"
+  },
+  {
+    "Id": 150,
+    "Type": "PatientRoom"
+  },
+  {
+    "Id": 151,
+    "Type": "PatientRoom"
+  },
+  {
+    "Id": 152,
+    "Type": "PatientRoom"
+  },
+  {
+    "Id": 153,
+    "Type": "PatientRoom"
+  },
+  {
+    "Id": 999,
+    "Type": "StockRoom"
+  },
+  {
+    "Id": 888,
+    "Type": "WaitingRoom"
+  }
+]

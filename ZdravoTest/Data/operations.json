@@ -1,0 +1,1 @@
+[{"Id":12,"Time":{"start":"2023-04-16T23:04:51.7774643+02:00","end":"2023-04-16T23:04:51.7774685+02:00"},"Doctor":{"email":"email","firstname":"ime","lastname":"prezime","Specialization":"Anesthesiologist","FullName":"Dr ime prezime"},"MedicalRecord":{"height":20,"weight":120,"deseaseHistory":[]},"Room":null,"Equipment":null}]

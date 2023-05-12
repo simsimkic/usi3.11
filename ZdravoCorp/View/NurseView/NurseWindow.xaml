@@ -1,0 +1,47 @@
+﻿<Window x:Class="ZdravoCorp.View.NurseView.NurseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:nurse="clr-namespace:ZdravoCorp.Core.ViewModels.NurseViewModel"
+        xmlns:local="clr-namespace:ZdravoCorp.View.NurseView"
+        mc:Ignorable="d"
+        Title="NurseWindow" Height="600" Width="920"
+        Background="#29262e">
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type nurse:PatientReceptionViewModel}">
+            <local:PatientReceptionView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type nurse:UrgentAppointmentViewModel}">
+            <local:UrgentAppointmentView />
+        </DataTemplate>
+
+    </Window.Resources>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="162" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Nurse" Foreground="White" FontSize="24" VerticalAlignment="Center" HorizontalAlignment="Left"
+                   Margin="20,0,0,0" Height="32" Width="85" />
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <RadioButton Content="New Patient Reception" Height="50" Foreground="WhiteSmoke"
+                         Style="{DynamicResource ToggleTheme}" Command="{Binding NewPatientReceptionCommand}" />
+            <RadioButton Content="Urgent Appointment" Height="50" Foreground="WhiteSmoke"
+                         Style="{DynamicResource ToggleTheme}" Command="{Binding UrgentAppointmentReservationCommand}" />
+
+        </StackPanel>
+        <ContentControl Grid.RowSpan="2" Background="#29262e" Content="{Binding Path=CurrentView}" Grid.Row="0"
+                        Grid.Column="1" Margin="10,10,10,10" />
+    </Grid>
+
+
+</Window>

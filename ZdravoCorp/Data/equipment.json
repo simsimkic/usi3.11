@@ -1,0 +1,116 @@
+[
+  {
+    "Id": 1,
+    "Name": "Bed",
+    "Type": "Room",
+    "IsDynamic": false
+  },
+  {
+    "Id": 2,
+    "Name": "Table",
+    "Type": "Room",
+    "IsDynamic": false
+  },
+  {
+    "Id": 3,
+    "Name": "Chair",
+    "Type": "Room",
+    "IsDynamic": false
+  },
+  {
+    "Id": 4,
+    "Name": "Cabinet",
+    "Type": "Room",
+    "IsDynamic": false
+  },
+  {
+    "Id": 5,
+    "Name": "Operating Table",
+    "Type": "Operation",
+    "IsDynamic": false
+  },
+  {
+    "Id": 6,
+    "Name": "Bedside Table",
+    "Type": "Room",
+    "IsDynamic": false
+  },
+  {
+    "Id": 10,
+    "Name": "Gauze",
+    "Type": "Operation",
+    "IsDynamic": true
+  },
+  {
+    "Id": 11,
+    "Name": "Stitch",
+    "Type": "Operation",
+    "IsDynamic": true
+  },
+  {
+    "Id": 12,
+    "Name": "Thread",
+    "Type": "Operation",
+    "IsDynamic": true
+  },
+  {
+    "Id": 13,
+    "Name": "Syringe",
+    "Type": "Examination",
+    "IsDynamic": true
+  },
+  {
+    "Id": 14,
+    "Name": "Needle",
+    "Type": "Operation",
+    "IsDynamic": true
+  },
+  {
+    "Id": 21,
+    "Name": "Pen",
+    "Type": "Examination",
+    "IsDynamic": true
+  },
+  {
+    "Id": 22,
+    "Name": "Paper",
+    "Type": "Examination",
+    "IsDynamic": true
+  },
+  {
+    "Id": 23,
+    "Name": "Staples",
+    "Type": "Examination",
+    "IsDynamic": true
+  },
+  {
+    "Id": 24,
+    "Name": "Patch",
+    "Type": "Operation",
+    "IsDynamic": true
+  },
+  {
+    "Id": 25,
+    "Name": "Mask",
+    "Type": "Operation",
+    "IsDynamic": true
+  },
+  {
+    "Id": 26,
+    "Name": "Gloves",
+    "Type": "Examination",
+    "IsDynamic": true
+  },
+  {
+    "Id": 27,
+    "Name": "Oxygen Tank",
+    "Type": "Operation",
+    "IsDynamic": true
+  },
+  {
+    "Id": 28,
+    "Name": "Lamp",
+    "Type": "Operation",
+    "IsDynamic": true
+  }
+]

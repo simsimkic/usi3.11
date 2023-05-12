@@ -1,0 +1,57 @@
+﻿<Window x:Class="ZdravoCorp.View.DoctorView.ChangeMedicalRecordView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Medical record" Height="332" Width="350"
+        Background="#29262e">
+    <Grid Margin="30,0,0,16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Margin="0 10 30 20">
+            <Label Foreground="White" Content="Patient: " />
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1" Margin="0 10 30 20">
+            <Label Foreground="White" Content="{Binding PatientName}" />
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Margin=" 0 15 30 20">
+            <Label Foreground="White" Content="Weight: " />
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" Margin="0 15 30 20">
+            <TextBox Text="{Binding Weight,UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0" Margin=" 0 15 30 20">
+            <Label Foreground="White" Content="Height" />
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1" Margin="0 15 30 20">
+            <TextBox Text="{Binding Height,UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="0" Margin=" 0 15 30 20">
+            <Label Foreground="White" Content="Disease history: " />
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1" Margin="0 15 30 20">
+            <TextBox Text="{Binding  DiseaseHistory,UpdateSourceTrigger=PropertyChanged}" />
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="0" Margin=" 0 15 30 20">
+            <Button Content="Save" Command="{Binding SaveCommand}" Padding="4" Margin="0,0,0,0" Width="100" />
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1" Margin="20 15 30 20">
+            <Button Content="Close" Command="{Binding CloseCommand}" Padding="4" Margin="0,0,0,0" Width="100" />
+        </Grid>
+
+
+    </Grid>
+</Window>

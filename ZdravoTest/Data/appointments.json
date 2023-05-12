@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 73292,
+    "Time": {
+      "start": "2023-04-10T09:00:00",
+      "end": "2023-04-10T09:15:00"
+    },
+    "Doctor": {
+      "email": "savo.oroz@gmail.com",
+      "firstname": "Savo",
+      "lastname": "Oroz",
+      "specialization": "Surgeon"
+    },
+    "MedicalRecord": {
+      "height": 0,
+      "weight": 0,
+      "deseaseHistory": []
+    },
+    "Anamnesis": null,
+    "Room": null
+  },
+  {
+    "Id": 21188,
+    "Time": {
+      "start": "2023-03-10T06:00:00",
+      "end": "2023-03-10T06:15:00"
+    },
+    "Doctor": {
+      "email": "savo.oroz@gmail.com",
+      "firstname": "Savo",
+      "lastname": "Oroz",
+      "specialization": "Surgeon"
+    },
+    "MedicalRecord": {
+      "height": 0,
+      "weight": 0,
+      "deseaseHistory": []
+    },
+    "Anamnesis": null,
+    "Room": null
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "Director",
+    "Email": "pero.peric@gmail.com",
+    "Password": "pero78",
+    "UserState": "NotBlocked"
+  },
+  {
+    "Type": "Doctor",
+    "Email": "savo.oroz@gmail.com",
+    "Password": "1",
+    "Userstate": "NotBlocked"
+  },
+  {
+    "Type": "Doctor",
+    "Email": "vrabac@gmail.com",
+    "Password": "1",
+    "userstate": "NotBlocked"
+  },
+  {
+    "Type": "Nurse",
+    "Email": "eva.ras@gmail.com",
+    "Password": "eva44",
+    "UserState": "NotBlocked"
+  },
+  {
+    "Type": "Patient",
+    "Email": "sreten.pejovic@gmail.com",
+    "Password": "1",
+    "UserState": "NotBlocked"
+  },
+  {
+    "Type": "Patient",
+    "Email": "marko.stojanovic@gmail.com",
+    "Password": "koks33",
+    "UserState": "NotBlocked"
+  }
+]

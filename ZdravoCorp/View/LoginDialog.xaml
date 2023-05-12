@@ -1,0 +1,31 @@
+﻿<Window x:Class="ZdravoCorp.View.LoginDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        Title="Login" Height="370" Width="400" Background="#29262e">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Foreground="White" FontFamily="Arial" FontSize="20" Margin="0, 20, 0, 0" HorizontalAlignment="Center">LOGIN INTO YOUR ACCOUNT</Label>
+        <Label Grid.Row="1" Foreground="LightGray" Margin="20, 30, 0, 0">Email</Label>
+        <TextBox Grid.Row="2" Margin="0, 1, 0 ,0 " Width="350" Height="30" FontSize="18" Name="EmailBox"
+                 Text="{Binding Path = Email, Mode = OneWayToSource, UpdateSourceTrigger=PropertyChanged}" />
+
+        <Label Grid.Row="3" Foreground="LightGray" Margin="20, 30, 0, 0">Password</Label>
+        <PasswordBox Grid.Row="4" Margin="0, 1, 0 ,0 " Width="350" Height="30" FontSize="18" Name="PasswordBox"
+                     PasswordChanged="PasswordBox_OnPasswordChanged" MaxLength="10" />
+
+        <Button Grid.Row="5" Width="80" Height="30" Margin="50" Name="LoginButton" Click="LoginButton_OnClick">Log In</Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,53 @@
+﻿<Window x:Class="ZdravoCorp.View.Director.DirectorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:director="clr-namespace:ZdravoCorp.Core.ViewModels.DirectorViewModel"
+        xmlns:directorView="clr-namespace:ZdravoCorp.View.DirectorView"
+        mc:Ignorable="d"
+        Title="DirectorWindow" Height="600" Width="920"
+        Background="#29262e">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type director:EquipmentPaneViewModel}">
+            <directorView:EquipmentView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type director:DEquipmentPaneViewModel}">
+            <directorView:DynamicOrderView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type director:MoveEquipmentViewModel}">
+            <directorView:MoveEquipmentView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type director:MoveDEquipmentViewModel}">
+            <directorView:DynamicMoveView />
+        </DataTemplate>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Director" Foreground="White" FontSize="24" VerticalAlignment="Center"
+                   HorizontalAlignment="Left" Margin="20, 0, 0, 0" />
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <RadioButton Content="View Equipment" Height="50" Foreground="WhiteSmoke"
+                         Style="{DynamicResource ToggleTheme}" Command="{Binding ViewEquipmentCommand}" />
+            <RadioButton Content="Order Equipment" Height="50" Foreground="WhiteSmoke"
+                         Style="{DynamicResource ToggleTheme}" Command="{Binding ViewDynamicEquipmentCommand}" />
+            <RadioButton Content="Move Equipment" Height="50" Foreground="WhiteSmoke"
+                         Style="{DynamicResource ToggleTheme}" Command="{Binding MoveEquipmentCommand}" />
+            <RadioButton Content="Move Dynamic Equipment" Height="50" Foreground="WhiteSmoke"
+                         Style="{DynamicResource ToggleTheme}" Command="{Binding MoveDynamicEquipmentCommand}" />
+
+        </StackPanel>
+        <ContentControl Grid.RowSpan="2" Background="#29262e" Content="{Binding Path=CurrentView}" Grid.Row="0"
+                        Grid.Column="1" Margin="10" />
+    </Grid>
+
+
+</Window>
